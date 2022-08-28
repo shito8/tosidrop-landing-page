@@ -1,0 +1,99 @@
+.darkMode{
+    display: none;
+}
+
+body.dark .sunMode{
+    display: none;
+}
+
+body.dark .darkMode{
+    display: inline;
+}
+
+body.dark {
+    background: linear-gradient(222.26deg, rgba(255, 215, 138, 0.2) 0%, rgba(34, 34, 34, 0) 18.14%), linear-gradient(180deg, rgba(105, 105, 105, 0) 13.37%, #080A0E 26.87%), linear-gradient(40.71deg, #1B1464 50.16%, #9BD5ED 142.82%);
+}
+
+body.dark .articleLeft h2 {
+    background: linear-gradient(-90deg, #9BB3F2,#F0A5A4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.dark .articleLeft h1{
+    color: #FFFFFF;
+}
+
+body.dark .button{
+    background: linear-gradient(90deg, #EAA6AB,#9BB4F3);
+    color: #000000;
+    box-shadow: -0.25px 0.25px 5px 1.25px rgba(255, 255, 255, 0.25);
+}
+
+body.dark .title h2, body.dark .social h2 {
+    background: linear-gradient(90deg, #8C79FF 5%, #8AC7FF 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark .title p, body.dark .clients p, body.dark .social p {
+    color: #787D80;
+}
+
+body.dark .clients h2 {
+    background: linear-gradient(#8C79FF 5%, #8AC7FF 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+body.dark .card {
+    background: #141B22;
+}
+
+body.dark .card h3 {
+    color: #ffffff;
+}
+
+body.dark .card p {
+    color: #849096;
+}
+
+body.dark .cardClient {
+    background: #141B22;
+}
+
+body.dark .cardSocial:last-child{
+    color: #FFFFFF;
+}
+
+body.dark footer {
+    background: #373775;
+}
+
+body.dark footer h4{
+    color: #ffffff;
+}
+
+body.dark footer p, body.dark footer li {
+    color: #C2CAD1;
+}
+
+body.darkMode footer i{
+    background-color: #ffffff;
+}
+
+body.dark .cardSocial {
+    background: #141B22;
+}
+
+body.dark footer li:hover{
+    cursor: pointer;
+    color: #8BBBFF;
+}
+
+
+
+
+
+/* --- Medias Queries--- */
+
