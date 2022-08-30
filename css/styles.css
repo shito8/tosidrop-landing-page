@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 2%;
+    margin: 0 2.5%;
     height: calc(var(--hmain)*.1);
 }
 
@@ -33,15 +33,12 @@ header nav {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    width: 50%;
 }
 
-header nav i {
-    margin: 0% 2% 0% 0%;
-}
 
 header nav i img {
     height: calc(var(--hmain)*.05);
+    width: calc(var(--hmain)*.05);
 }
 
 main {
@@ -58,12 +55,11 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 60%;
+    width: 57%;
 }
 
 .articleLeft div {
     width: 100%;
-    margin: 25% 0%;
 }
 
 .articleLeft h2 {
@@ -77,7 +73,7 @@ main {
 .articleLeft h1{
     font-weight: 500;
     font-size: calc(var(--hmain)*.035);
-    padding: 2.5% 0;
+    margin: calc(var(--hmain)*.035) 0;
 }
 
 .button{
@@ -88,21 +84,20 @@ main {
     font-size: calc(var(--hmain)*.023);
     border-radius: calc(var(--hmain)*.02);
     border: none;
-    margin: 2% 0px;
     box-shadow: -0.5px 0.5px 10px 2.5px rgba(0, 0, 0, 0.25);
 }
 
 .articleRight {
-    width: 40%;
+    width: 38%;
     display: flex;
     justify-content: center;
     height: 100%;
 }
 
 .articleRight img {
-    width: 85%;
-    height: 70%;
-    margin: 10% 0%;
+    width: calc(var(--hmain)*.56);
+    height: calc(var(--hmain)*.56);
+    margin: calc(var(--hmain)*.1) 0%;
 }
 
 /* --- second scheme --- */
@@ -115,14 +110,13 @@ main {
     align-items: center;
 }
 
-.groupCards .title, .social .title {
+.groupCards .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     height: calc(var(--hgCards)*.2);
-    margin: 0% 0% 2% 0%; 
-
+    margin-bottom: calc(var(--hgCards)*.06);
 }
 
 
@@ -132,13 +126,13 @@ main {
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: calc(var(--hgCards)*.052);
-    padding: 1% 0;
+    margin-bottom: calc(var(--hgCards)*.026);
 }
 
 .title p, .social p {
     font-size: calc(var(--hgCards)*.03);
     font-weight: 500;
-    padding: 0.3% 0;
+    margin-bottom: calc(var(--hgCards)*.015);
 }
 
 .gcards {
@@ -147,6 +141,7 @@ main {
     width: 76%;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: calc(var(--hgCards)*.12);
 
 }
 
@@ -157,17 +152,16 @@ main {
     border-radius: calc(var(--hgCards)*.05);
     justify-content: center;
     align-items:center;
-    margin: 0% 0% 10% 0%;
+    margin-bottom: calc(var(--hgCards)*.05);
     width: calc(var(--hgCards)*.5);
-    height: calc(var(--hgCards)*.7);
-    padding: 0% 2%;
+    height: calc(var(--hgCards)*.63);
+    padding: 0% calc(var(--hgCards)*.03);
     box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
-    height: 50%;
-    width: 70%;
-    margin: 5% 0% 0% 0%;
+    height: calc(var(--hgCards)*.33);
+    width: calc(var(--hgCards)*.33);
 }
 
 
@@ -178,7 +172,7 @@ main {
 }
 
 .card p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: calc(var(--hgCards)*.018);
 }
 
@@ -191,38 +185,42 @@ main {
     margin: 0% 12%;
 }
 
+.clients div {
+    margin-bottom: calc(var(--hclients)*.068);
+}
+
 .clients h2 {
     background: linear-gradient(#4B2EFF 5%, #0085FF 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: calc(var(--hclients)*.06);
-    padding: 1% 0;
+    margin-bottom: calc(var(--hclients)*.03);
 }
 
 .clients p {
     font-size: calc(var(--hclients)*.035);
     font-weight: 500;
-    padding: 0.3% 0;
 }
 
 
 .groupClients{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .cardClient {
-    height: calc(var(--hclients)*.35);
-    width: calc(var(--hclients)*.6);
+    height: calc(var(--hclients)*.32);
+    width: calc(var(--hclients)*.56);
     box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hclients)*.045);
     display: flex;
-    margin: 7% 1% 7% 1%;
+    margin-right: calc(var(--hclients)*.07);
+    margin-left: calc(var(--hclients)*.07);
+    margin-bottom: calc(var(--hclients)*.06);
 }
 
 
@@ -238,20 +236,28 @@ main {
     align-items: center;
 }
 
+.social .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: calc(var(--hsocial)*.06)
+
+}
+
 
 .social h2 {
     background: linear-gradient(90deg, #4B2EFF 5%, #0085FF 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    font-size: calc(var(--hsocial)*.049);
-    padding: 1% 0;
+    font-size: calc(var(--hsocial)*.056);
+    margin-bottom: calc(var(--hsocial)*.028);
 }
 
 .social p {
-    font-size: calc(var(--hsocial)*.028);
+    font-size: calc(var(--hsocial)*.03);
     font-weight: 500;
-    padding: 0.3% 0;
 }
 
 
@@ -264,31 +270,33 @@ main {
 }
 
 .cardSocial {
-    width: calc(var(--hsocial)*.45);
-    height: calc(var(--hsocial)*.5);
+    width: calc(var(--hsocial)*.4);
+    height: calc(var(--hsocial)*.47);
     box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hsocial)*.04);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5% 1%;
+    margin-bottom: calc(var(--hsocial)*.06)
+
 }
 
 .cardSocial img {
-    width: 30%;
-    height: 30%;
+    width: calc(var(--hsocial)*.14);
+    height: calc(var(--hsocial)*.14);
     border-radius: 15%;
 }
 
 .cardSocial h3{
     font-weight: 600;
     font-size: calc(var(--hsocial)*.036);
-    margin: 10% 0% 10% 0%;
+    margin-top: calc(var(--hsocial)*.06);
+    margin-bottom: calc(var(--hsocial)*.04);
 }
 
 .cardSocial p{
-    font-weight: 600;
+    font-weight: 500;
     font-size: calc(var(--hsocial)*.02);
 }
 
@@ -314,7 +322,7 @@ footer {
     height: 45vh;
     --hfooter: 45vh;
     background: #C0C1FF;
-    margin: 10% 0% 0% 0%;
+    margin-top: calc(var(--hfooter)*0.5);
 }
 
 footer .foot{
@@ -322,11 +330,12 @@ footer .foot{
     margin: 0% 2.5%;
     width: 95%;
     height: 100%;
-    padding: 1% 0%;
+    padding-top: calc(var(--hfooter)*.07);
+    align-items: center;
 }
 
 
-footer article {
+footer article:first-child {
     width: 25%;
     height: 100%;
 }
@@ -334,19 +343,20 @@ footer article {
 .logoFooter{
     display: flex;
     flex-direction: column;
+
 }
 
 .logoFooter img{
     height: calc(var(--hfooter)*.1);
     width: calc(var(--hfooter)*.4);
-    margin: 0% 0% 5% 0%;
+    margin-bottom: calc(var(--hfooter)*.05);
 }
 
 .logoFooter p, .rights p {
     
     font-size: calc(var(--hfooter)*.035);
     font-weight: 500;
-    margin: 1% 0% 0% 0%;
+    margin-top: calc(var(--hfooter)*.0175);
 }
 
 footer nav {
@@ -354,20 +364,19 @@ footer nav {
     height: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 0.5% 0%;
 }
 
 footer h4 {
     font-weight: 700;
     font-size: calc(var(--hfooter)*.04);
-    margin: 0% 0% 20% 0%;
+    margin-bottom: calc(var(--hfooter)*.05);
     color: #000000;
 }
 
 footer li {
     font-size: calc(var(--hfooter)*.04);
     font-weight: 600;
-    margin: 0% 0% 20% 0%;
+    margin-bottom: calc(var(--hfooter)*.05);
     color: #000000;
 }
 
@@ -382,18 +391,18 @@ footer .icons{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    height: 10%;
 }
 
 .icons i{
     display: flex;
-    width: 8%;
     justify-content: flex-end;
-    margin: 0% 0% 0 6%;
+    margin-left: calc(var(--hfooter)*.06);
+    align-items: center;
 }
 
 .icons img {
     height: calc(var(--hfooter)*.06);
+    width: calc(var(--hfooter)*.06);
 }
 
 footer .rights{
@@ -401,7 +410,7 @@ footer .rights{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 20%;
+    margin-top: calc(var(--hfooter)*.06);
 }
 
 
@@ -414,8 +423,89 @@ footer .rights{
 
 /* --- Medias Queries--- */
 
+@media (max-width: 1023px) and (orientation: portrait) {
 
-@media (max-width: 650px) {
+    header {
+        padding: 0 calc(var(--hmain)*.03);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .articleLeft {
+        width: 100%;
+    }
+
+    /* Footer Portrait Idem*/
+
+    footer {
+        height: 60vh;
+    }
+
+
+    footer .foot{
+        flex-direction: column;
+        padding: 0px calc(var(--hfooter)*.03);
+
+
+    }
+
+    footer article:first-child {
+        width: 100%;
+    }
+
+    .logoFooter{
+        
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: calc(var(--hfooter)*.06)
+
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        width: 33%;
+    }
+
+    footer article:last-child {
+        width: 100%;
+        margin-top: calc(var(--hfooter)*.03);
+    }
+
+}
+
+@media (max-width: 950px) and (min-height: 700px) {
+
+    .hidden {
+        display: none;
+    }
+
+    .articleLeft {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 650px) and (orientation: portrait) {
+
+    header {
+        padding: 0 calc(var(--hmain)*.03);
+    }
 
     .hidden {
         display: none;
@@ -451,7 +541,6 @@ footer .rights{
         padding: calc(var(--hmain)*.005) calc(var(--hmain)*.04);
         font-size: calc(var(--hmain)*.016);
         border-radius: calc(var(--hmain)*.006);
-        margin: 2% 0px;
     }
 
     .clients h2 {
@@ -459,7 +548,7 @@ footer .rights{
     }
     
     .clients p {
-        font-size: calc(var(--hclients)*.03);
+        font-size: calc(var(--hclients)*.028);
     }
 
 
@@ -480,15 +569,23 @@ footer .rights{
         height: 60vh;
     }
 
+
     footer .foot{
         flex-direction: column;
+        padding: 0px calc(var(--hfooter)*.03);
+
+    }
+
+    footer article:first-child {
+        width: 100%;
     }
 
     .logoFooter{
-        width: 100%;
+        
         justify-content: center;
         align-items: center;
-        height: 30%;
+        height: 100%;
+    
     }
 
     footer nav {
@@ -496,7 +593,8 @@ footer .rights{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 70%;
+        margin-top: calc(var(--hfooter)*.06);
+
     }
 
     footer ul {
@@ -506,22 +604,14 @@ footer .rights{
         align-items: center;
         height: 100%;
         width: 33%;
-        margin: 5% 0% 5% 0%;
     }
 
     footer article:last-child {
         width: 100%;
-        height: 100%;
+        margin-top: calc(var(--hfooter)*.03);
     }
 
 
-    footer .rights{
-        margin: 5% 0% 0% 0%;
-    }
-
-    .icons i{
-        margin: 0% 0% 0 1%;
-    }
 
 }
 

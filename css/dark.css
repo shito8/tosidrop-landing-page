@@ -26,7 +26,7 @@ body.dark .articleLeft h1{
 body.dark .button{
     background: linear-gradient(90deg, #EAA6AB,#9BB4F3);
     color: #000000;
-    box-shadow: -0.25px 0.25px 5px 1.25px rgba(255, 255, 255, 0.25);
+    box-shadow: -0.5px 0.5px 10px 2.5px rgba(255, 255, 255, 0.25);
 }
 
 body.dark .title h2, body.dark .social h2 {
