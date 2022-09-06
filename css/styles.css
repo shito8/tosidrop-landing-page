@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     margin: 0 2.5%;
     height: calc(var(--hmain)*.1);
+    padding-right: calc(var(--hmain)*.025);
 }
 
 header img{
@@ -63,11 +64,14 @@ main {
 }
 
 .articleLeft h2 {
-    background: linear-gradient(-90deg, #3468D3,#5932c9);
+    background: linear-gradient(270deg, #3468D3 15.33%, #5932C9 101.88%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    background-size:400% 400%;
     font-size: calc(var(--hmain)*.07);
+    -webkit-animation:change 5s ease infinite;
+    animation:change 5s ease infinite;
 
 }
 .articleLeft h1{
@@ -79,7 +83,7 @@ main {
 .button{
     background: linear-gradient(90deg, #3765D3,#5934CA);
     padding: calc(var(--hmain)*.02) calc(var(--hmain)*.06);
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff;
     font-size: calc(var(--hmain)*.023);
     border-radius: calc(var(--hmain)*.02);
@@ -120,13 +124,16 @@ main {
 }
 
 
-.title h2, .social h2 {
-    background: linear-gradient(90deg, #4B2EFF 5%, #0085FF 95%);
+.title h2 {
+    background: linear-gradient(270.97deg, #0085FF 1.08%, #4B2EFF 77.04%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+    background-size:400% 400%;
     font-size: calc(var(--hgCards)*.052);
     margin-bottom: calc(var(--hgCards)*.026);
+    -webkit-animation:change 5s ease infinite;
+    animation:change 5s ease infinite;
 }
 
 .title p, .social p {
@@ -138,7 +145,7 @@ main {
 .gcards {
     display: flex;
     flex-wrap: wrap;
-    width: 76%;
+    width: 90%;
     justify-content: space-around;
     align-items: center;
     margin-bottom: calc(var(--hgCards)*.12);
@@ -153,15 +160,15 @@ main {
     justify-content: center;
     align-items:center;
     margin-bottom: calc(var(--hgCards)*.05);
-    width: calc(var(--hgCards)*.5);
-    height: calc(var(--hgCards)*.63);
+    width: calc(var(--hgCards)*.53);
+    height: calc(var(--hgCards)*.65);
     padding: 0% calc(var(--hgCards)*.03);
     box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
-    height: calc(var(--hgCards)*.33);
-    width: calc(var(--hgCards)*.33);
+    height: calc(var(--hgCards)*.35);
+    width: calc(var(--hgCards)*.35);
 }
 
 
@@ -182,7 +189,7 @@ main {
 
 .clients{
     --hclients: 70vh;
-    margin: 0% 12%;
+    margin: 0% 5%;
 }
 
 .clients div {
@@ -190,17 +197,22 @@ main {
 }
 
 .clients h2 {
-    background: linear-gradient(#4B2EFF 5%, #0085FF 95%);
+    background: linear-gradient(270.55deg, #4190FF 60.59%, #4A2DFA 104%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+    background-size:400% 400%;
     font-size: calc(var(--hclients)*.06);
     margin-bottom: calc(var(--hclients)*.03);
+    -webkit-animation:change 5s ease infinite;
+    animation:change 5s ease infinite;
+    padding-left: 5%;
 }
 
 .clients p {
     font-size: calc(var(--hclients)*.035);
     font-weight: 500;
+    padding-left: 5%;
 }
 
 
@@ -247,12 +259,15 @@ main {
 
 
 .social h2 {
-    background: linear-gradient(90deg, #4B2EFF 5%, #0085FF 95%);
+    background: linear-gradient(270.55deg, #4190FF 60.59%, #4A2DFA 104%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+    background-size:400% 400%;
     font-size: calc(var(--hsocial)*.056);
     margin-bottom: calc(var(--hsocial)*.028);
+    -webkit-animation:change 5s ease infinite;
+    animation:change 5s ease infinite;
 }
 
 .social p {
@@ -262,24 +277,22 @@ main {
 
 
 .groupSocial {
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .cardSocial {
     width: calc(var(--hsocial)*.4);
-    height: calc(var(--hsocial)*.47);
+    height: calc(var(--hsocial)*.45);
     box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hsocial)*.04);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: calc(var(--hsocial)*.06)
-
+    margin-bottom: calc(var(--hsocial)*.06);
 }
 
 .cardSocial img {
@@ -319,24 +332,26 @@ main {
     /* --- Footer scheme --- */
 
 footer {
+    display: flex;
     height: 45vh;
     --hfooter: 45vh;
     background: #C0C1FF;
     margin-top: calc(var(--hfooter)*0.5);
+    padding: 0% 2.5%;
+    padding-top: calc(var(--hfooter)*.07);
 }
 
 footer .foot{
     display: flex;
-    margin: 0% 2.5%;
     width: 95%;
     height: 100%;
-    padding-top: calc(var(--hfooter)*.07);
     align-items: center;
+    padding-right: calc(var(--hfooter)*.03);
 }
 
 
-footer article:first-child {
-    width: 25%;
+footer article {
+    width: 30%;
     height: 100%;
 }
 
@@ -360,7 +375,7 @@ footer article:first-child {
 }
 
 footer nav {
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -380,8 +395,8 @@ footer li {
     color: #000000;
 }
 
-footer article:last-child {
-    width: 25%;
+footer section {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -425,10 +440,6 @@ footer .rights{
 
 @media (max-width: 1023px) and (orientation: portrait) {
 
-    header {
-        padding: 0 calc(var(--hmain)*.03);
-    }
-
     .hidden {
         display: none;
     }
@@ -436,6 +447,7 @@ footer .rights{
     .articleLeft {
         width: 100%;
     }
+
 
     /* Footer Portrait Idem*/
 
@@ -447,11 +459,9 @@ footer .rights{
     footer .foot{
         flex-direction: column;
         padding: 0px calc(var(--hfooter)*.03);
-
-
     }
 
-    footer article:first-child {
+    footer article {
         width: 100%;
     }
 
@@ -468,7 +478,7 @@ footer .rights{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--hfooter)*.06)
+        margin-top: calc(var(--hfooter)*.1)
 
     }
 
@@ -481,12 +491,98 @@ footer .rights{
         width: 33%;
     }
 
-    footer article:last-child {
+    footer section {
         width: 100%;
-        margin-top: calc(var(--hfooter)*.03);
+        margin-top: calc(var(--hfooter)*.06);
+        padding-left: calc(var(--hfooter)*.06);
     }
 
+
+
 }
+
+@media (max-width: 1400px) and (min-height: 700px) {
+
+    footer {
+        flex-direction: column;
+    }
+    footer section .rights{
+        align-items: flex-start;
+    }
+
+    footer .icons{
+        justify-content: flex-start;
+    }
+
+    .icons i{
+        margin-right: calc(var(--hfooter)*.06);
+        margin-left: 0;
+    }
+
+    footer h4 {
+        font-size: calc(var(--hfooter)*.045);
+        margin-bottom: calc(var(--hfooter)*.06);
+    }
+    
+    footer li {
+        font-size: calc(var(--hfooter)*.045);
+        margin-bottom: calc(var(--hfooter)*.06);
+    }
+
+
+
+}
+
+@media (max-width: 800px) and (min-height: 300px) {
+
+    footer {
+        flex-direction: column;
+    }
+    footer section .rights{
+        align-items: flex-start;
+    }
+
+    footer .icons{
+        justify-content: flex-start;
+    }
+
+    .icons i{
+        margin-right: calc(var(--hfooter)*.06);
+        margin-left: 0;
+    }
+
+    footer h4 {
+        font-size: calc(var(--hfooter)*.045);
+        margin-bottom: calc(var(--hfooter)*.06);
+    }
+    
+    footer li {
+        font-size: calc(var(--hfooter)*.045);
+        margin-bottom: calc(var(--hfooter)*.06);
+    }
+
+
+
+}
+
+@media (max-width: 800px) and (min-height: 700px) {
+
+    footer {
+        flex-direction: column;
+    }
+    footer section .rights{
+        align-items: flex-end;
+    }
+
+    footer .icons{
+        justify-content: flex-end;
+    }
+
+    .icons i{
+        margin-right: 0;
+        margin-left: calc(var(--hfooter)*.06);
+    }
+
 
 @media (max-width: 950px) and (min-height: 700px) {
 
@@ -503,9 +599,6 @@ footer .rights{
 
 @media (max-width: 650px) and (orientation: portrait) {
 
-    header {
-        padding: 0 calc(var(--hmain)*.03);
-    }
 
     .hidden {
         display: none;
@@ -528,19 +621,19 @@ footer .rights{
     }
 
     .articleLeft h2 {
-        font-size: calc(var(--hmain)*.05);
+        font-size: calc(var(--hmain)*.06);
     
     }
     .articleLeft h1{
-        font-size: calc(var(--hmain)*.025);
+        font-size: calc(var(--hmain)*.03);
     }
     
 
 
     .button{
-        padding: calc(var(--hmain)*.005) calc(var(--hmain)*.04);
-        font-size: calc(var(--hmain)*.016);
-        border-radius: calc(var(--hmain)*.006);
+        padding: calc(var(--hmain)*.02) calc(var(--hmain)*.08);
+        font-size: calc(var(--hmain)*.025);
+        border-radius: calc(var(--hmain)*.012);
     }
 
     .clients h2 {
@@ -566,17 +659,19 @@ footer .rights{
     }
 
     footer {
-        height: 60vh;
+        height: 100vh;
+        flex-direction: column;
+        padding: 0px calc(var(--hfooter)*.03);
     }
 
 
     footer .foot{
         flex-direction: column;
-        padding: 0px calc(var(--hfooter)*.03);
+        height: 80vh;
 
     }
 
-    footer article:first-child {
+    footer article {
         width: 100%;
     }
 
@@ -584,46 +679,36 @@ footer .rights{
         
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 15vh;
     
     }
 
     footer nav {
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        width: 100%;
         margin-top: calc(var(--hfooter)*.06);
+        height: 80%;
 
     }
 
     footer ul {
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        height: 100%;
-        width: 33%;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%;
     }
 
-    footer article:last-child {
+    footer section {
         width: 100%;
         margin-top: calc(var(--hfooter)*.03);
+        padding-left: calc(var(--hfooter)*.06);
+        height: 15vh;
+        padding: 0px calc(var(--hfooter)*.03);
     }
-
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
         /* --- Interactive --- */
@@ -638,7 +723,6 @@ footer .rights{
 }
 
 .card:hover{
-    cursor: pointer;
     scale: 1.05;
 }
 
@@ -661,3 +745,16 @@ footer i:hover{
     cursor: pointer;
     scale: 1.1;
 }
+
+
+        /* --- Animation --- */
+
+@-webkit-keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}}
+    
+@keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}}

@@ -15,24 +15,28 @@ body.dark {
 }
 
 body.dark .articleLeft h2 {
-    background: linear-gradient(-90deg, #9BB3F2,#F0A5A4);
+    background: linear-gradient(270deg, #9BB3F2 15.33%, #F0A5A4 101.88%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
 }
+
 body.dark .articleLeft h1{
     color: #FFFFFF;
 }
 
 body.dark .button{
-    background: linear-gradient(90deg, #EAA6AB,#9BB4F3);
+    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
     color: #000000;
     box-shadow: -0.5px 0.5px 10px 2.5px rgba(255, 255, 255, 0.25);
 }
 
 body.dark .title h2, body.dark .social h2 {
-    background: linear-gradient(90deg, #8C79FF 5%, #8AC7FF 95%);
+    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
+
 }
 
 body.dark .title p, body.dark .clients p, body.dark .social p {
@@ -40,9 +44,10 @@ body.dark .title p, body.dark .clients p, body.dark .social p {
 }
 
 body.dark .clients h2 {
-    background: linear-gradient(#8C79FF 5%, #8AC7FF 95%);
+    background: linear-gradient(270.55deg, #8BBBFF 60.59%, #8C79FF 104%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
 }
 
 
