@@ -70,8 +70,8 @@ main {
     font-weight: 700;
     background-size:400% 400%;
     font-size: calc(var(--hmain)*.07);
-    -webkit-animation:change 5s ease infinite;
-    animation:change 5s ease infinite;
+    -webkit-animation:change 4s ease infinite;
+    animation:change 4s ease infinite;
 
 }
 .articleLeft h1{
@@ -132,8 +132,8 @@ main {
     background-size:400% 400%;
     font-size: calc(var(--hgCards)*.052);
     margin-bottom: calc(var(--hgCards)*.026);
-    -webkit-animation:change 5s ease infinite;
-    animation:change 5s ease infinite;
+    -webkit-animation:change 4s ease infinite;
+    animation:change 4s ease infinite;
 }
 
 .title p, .social p {
@@ -204,8 +204,8 @@ main {
     background-size:400% 400%;
     font-size: calc(var(--hclients)*.06);
     margin-bottom: calc(var(--hclients)*.03);
-    -webkit-animation:change 5s ease infinite;
-    animation:change 5s ease infinite;
+    -webkit-animation:change 4s ease infinite;
+    animation:change 4s ease infinite;
     padding-left: 5%;
 }
 
@@ -266,8 +266,8 @@ main {
     background-size:400% 400%;
     font-size: calc(var(--hsocial)*.056);
     margin-bottom: calc(var(--hsocial)*.028);
-    -webkit-animation:change 5s ease infinite;
-    animation:change 5s ease infinite;
+    -webkit-animation:change 4s ease infinite;
+    animation:change 4s ease infinite;
 }
 
 .social p {
@@ -658,12 +658,12 @@ footer .rights{
 
     .title h2{
 
-        font-size: calc(var(--hgCards)*.045);
+        font-size: calc(var(--hgCards)*.042);
 
     }
     
     .title p{
-        font-size: calc(var(--hgCards)*.025);
+        font-size: calc(var(--hgCards)*.024);
 
     }
 
@@ -684,20 +684,20 @@ footer .rights{
     }
 
     .clients h2 {
-        font-size: calc(var(--hclients)*.05);
+        font-size: calc(var(--hclients)*.048);
     }
     
     .clients p {
-        font-size: calc(var(--hclients)*.028);
+        font-size: calc(var(--hclients)*.027);
     }
 
 
     .social h2 {
-        font-size: calc(var(--hsocial)*.045);
+        font-size: calc(var(--hsocial)*.043);
     }
     
     .social p {
-        font-size: calc(var(--hsocial)*.026);
+        font-size: calc(var(--hsocial)*.025);
     }
     
 
@@ -709,6 +709,7 @@ footer .rights{
         height: 100vh;
         flex-direction: column;
         padding: 0px calc(var(--hfooter)*.03);
+        align-items: center;
     }
 
 
@@ -741,14 +742,13 @@ footer .rights{
     footer ul {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
         width: 100%;
         height: 30%;
     }
 
     footer section {
         width: 100%;
-        margin-top: calc(var(--hfooter)*.03);
+        margin-top: calc(var(--hfooter)*.06);
         padding-left: calc(var(--hfooter)*.06);
         height: 15vh;
         padding: 0px calc(var(--hfooter)*.03);
