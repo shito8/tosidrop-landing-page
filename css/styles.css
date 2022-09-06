@@ -429,9 +429,55 @@ footer .rights{
 }
 
 
+        /* --- Interactive --- */
 
-
-
+        .switch:hover{
+            cursor: pointer;
+        }
+        
+        .button:hover{
+            cursor: pointer;
+            scale: 1.1;
+        }
+        
+        .card:hover{
+            scale: 1.05;
+        }
+        
+        .cardClient:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+        
+        .cardSocial:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+        
+        footer li:hover{
+            cursor: pointer;
+            color: #0085FF;
+        }
+        
+        footer i:hover{
+            cursor: pointer;
+            scale: 1.1;
+        }
+        
+        
+                /* --- Animation --- */
+        
+        @-webkit-keyframes change{
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
+            
+        @keyframes change{
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
 
 
 
@@ -708,55 +754,4 @@ footer .rights{
         padding: 0px calc(var(--hfooter)*.03);
     }
 
-
-}
-
-
-        /* --- Interactive --- */
-
-.switch:hover{
-    cursor: pointer;
-}
-
-.button:hover{
-    cursor: pointer;
-    scale: 1.1;
-}
-
-.card:hover{
-    scale: 1.05;
-}
-
-.cardClient:hover{
-    cursor: pointer;
-    scale: 1.05;
-}
-
-.cardSocial:hover{
-    cursor: pointer;
-    scale: 1.05;
-}
-
-footer li:hover{
-    cursor: pointer;
-    color: #0085FF;
-}
-
-footer i:hover{
-    cursor: pointer;
-    scale: 1.1;
-}
-
-
-        /* --- Animation --- */
-
-@-webkit-keyframes change{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}}
-    
-@keyframes change{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
 }
