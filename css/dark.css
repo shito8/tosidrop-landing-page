@@ -26,9 +26,9 @@ body.dark .articleLeft h1{
 }
 
 body.dark .button{
-    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
+    background: linear-gradient(97.17deg, #EAA6AB 44.41%, #9BB4F3 108.93%, rgba(217, 217, 217, 0) 108.93%);;
     color: #000000;
-    box-shadow: -0.5px 0.5px 10px 2.5px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.25);
 }
 
 body.dark .title h2, body.dark .social h2 {
@@ -40,7 +40,7 @@ body.dark .title h2, body.dark .social h2 {
 }
 
 body.dark .title p, body.dark .clients p, body.dark .social p {
-    color: #787D80;
+    color: #ffffff;
 }
 
 body.dark .clients h2 {
@@ -53,6 +53,7 @@ body.dark .clients h2 {
 
 body.dark .card {
     background: #141B22;
+
 }
 
 body.dark .card h3 {
@@ -60,16 +61,38 @@ body.dark .card h3 {
 }
 
 body.dark .card p {
-    color: #849096;
+    color: #ffffff;
 }
 
 body.dark .cardClient {
+    background: #141B22;
+
+}
+
+body.dark .cardSocial{
     background: #141B22;
 }
 
 body.dark .cardSocial:last-child{
     color: #FFFFFF;
 }
+
+body.dark .cardSocial.twitter p{
+    color: #1DA1F2;
+}
+
+body.dark .cardSocial.discord p{
+    color: #7289DA;
+}
+
+body.dark .cardSocial.telegram p{
+    color: #0088CC;
+}
+
+body.dark .cardSocial.medium p{
+    color: #ffffff;
+}
+
 
 body.dark footer {
     background: #373775;
@@ -95,10 +118,4 @@ body.dark footer li:hover{
     cursor: pointer;
     color: #8BBBFF;
 }
-
-
-
-
-
-/* --- Medias Queries--- */
 
