@@ -102,8 +102,8 @@ $secundary-color: #ffffff;
         border-radius: $border-card-4k;    
     } 
     @media (max-width: 600px) and (orientation: portrait){
-        width: 100%;
-        right: 0;
+        width: 90%;
+        right: 5%;
     } 
     div{
         display: flex;
@@ -119,6 +119,9 @@ $secundary-color: #ffffff;
         @media (min-width: 3200px) and (orientation: landscape){
             padding-bottom: $font-h3-4k*1.5;
         }   
+        @media (max-width: 600px) and (orientation: portrait){
+            padding-bottom: $font-h3-min*1.2;
+        } 
         h3{
             font-size: $font-h3-std;
             font-weight: fonts.$font-weight-semibold;
@@ -154,27 +157,21 @@ $secundary-color: #ffffff;
     }
     p{
         font-size: $font-pmin-std;
-        padding-bottom: $font-h3-std*2;
         font-weight: fonts.$font-weight-regular;
         @media (min-width: 1640px) and (orientation: landscape){
             font-size: $font-pmin-hd;
-            padding-bottom: $font-h3-hd*2;
         }
         @media (min-width: 2240px) and (orientation: landscape){
             font-size: $font-pmin-2k;
-            padding-bottom: $font-h3-2k*2;
         }
         @media (min-width: 3200px) and (orientation: landscape){
             font-size: $font-pmin-4k;
-            padding-bottom: $font-h3-4k*2;
-        } 
-        @media (max-width: 600px) and (orientation: portrait){
-            padding-bottom: $font-h3-hd*1.5;
         } 
     }
     a{
-        display: flex;
-        justify-content: flex-end;
+        position: absolute;
+        bottom: 7%;
+        right: 6%;
         button{
             font-weight: fonts.$font-weight-medium;
             background: linear-gradient(97.17deg, #EAA6AB 44.41%, #9BB4F3 108.93%, rgba(217, 217, 217, 0) 108.93%);
