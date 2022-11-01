@@ -1,6 +1,6 @@
 @use "./fontweight" as fonts;
 
-$width-card-std: 390px;
+$width-card-std: 400px;
 $height-card-std: $width-card-std*0.53;
 $border-card-std: $width-card-std*0.025;
 $gap-std: $width-card-std*.2;
@@ -104,6 +104,7 @@ $secundary-color: #ffffff;
     @media (max-width: 600px) and (orientation: portrait){
         width: 90%;
         right: 5%;
+        height: auto;
     } 
     div{
         display: flex;
@@ -124,7 +125,7 @@ $secundary-color: #ffffff;
         } 
         h3{
             font-size: $font-h3-std;
-            font-weight: fonts.$font-weight-semibold;
+            font-weight: fonts.$font-weight-medium;
             @media (min-width: 1640px) and (orientation: landscape){
                 font-size: $font-h3-hd;
             }
@@ -158,14 +159,21 @@ $secundary-color: #ffffff;
     p{
         font-size: $font-pmin-std;
         font-weight: fonts.$font-weight-regular;
+        line-height: $font-pmin-std*1.5;
         @media (min-width: 1640px) and (orientation: landscape){
             font-size: $font-pmin-hd;
+            line-height: $font-pmin-hd*1.5;
         }
         @media (min-width: 2240px) and (orientation: landscape){
             font-size: $font-pmin-2k;
+            line-height: $font-pmin-2k*1.5;
         }
         @media (min-width: 3200px) and (orientation: landscape){
             font-size: $font-pmin-4k;
+            line-height: $font-pmin-4k*1.5;
+        } 
+        @media (max-width: 600px) and (orientation: portrait){
+            padding-bottom: $font-h3-min*3;
         } 
     }
     a{

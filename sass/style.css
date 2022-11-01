@@ -478,47 +478,48 @@ body.dark .button {
   z-index: 10;
   position: fixed;
   color: #ffffff;
-  bottom: 39px;
-  right: 39px;
-  width: 390px;
-  height: 206.7px;
+  bottom: 40px;
+  right: 40px;
+  width: 400px;
+  height: 212px;
   padding: 0.875rem;
-  border-radius: 9.75px;
+  border-radius: 10px;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .pop {
-    bottom: 45.513px;
-    right: 45.513px;
-    width: 455.13px;
-    height: 241.2189px;
+    bottom: 46.68px;
+    right: 46.68px;
+    width: 466.8px;
+    height: 247.404px;
     padding: 1rem;
-    border-radius: 11.37825px;
+    border-radius: 11.67px;
   }
 }
 @media (min-width: 2240px) and (orientation: landscape) {
   .pop {
-    bottom: 70.2px;
-    right: 70.2px;
-    width: 702px;
-    height: 372.06px;
+    bottom: 72px;
+    right: 72px;
+    width: 720px;
+    height: 381.6px;
     padding: 1.5rem;
-    border-radius: 17.55px;
+    border-radius: 18px;
   }
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   .pop {
-    bottom: 97.5px;
+    bottom: 100px;
     right: calc((100vw - 3100px) / 2);
-    width: 975px;
-    height: 516.75px;
+    width: 1000px;
+    height: 530px;
     padding: 2.125rem;
-    border-radius: 24.375px;
+    border-radius: 25px;
   }
 }
 @media (max-width: 600px) and (orientation: portrait) {
   .pop {
     width: 90%;
     right: 5%;
+    height: auto;
   }
 }
 .pop div {
@@ -549,7 +550,7 @@ body.dark .button {
 }
 .pop div h3 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .pop div h3 {
@@ -595,20 +596,29 @@ body.dark .button {
 .pop p {
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 1.3125rem;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .pop p {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 2240px) and (orientation: landscape) {
   .pop p {
     font-size: 1.5rem;
+    line-height: 2.25rem;
   }
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   .pop p {
     font-size: 2.125rem;
+    line-height: 3.1875rem;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .pop p {
+    padding-bottom: 3rem;
   }
 }
 .pop a {
