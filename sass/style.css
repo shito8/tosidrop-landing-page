@@ -353,6 +353,10 @@ body.dark .button {
   }
 }
 
+#pop {
+  display: none;
+}
+
 .pop {
   background: linear-gradient(270deg, #4040A8 0%, #2161A7 100%);
   z-index: 10;

@@ -40,6 +40,9 @@ $border-btn-hd: $font-btn-hd*.3;
 $primary-color: #000000;
 $secundary-color: #ffffff;
 
+#pop{
+    display: none;
+}
 
 .pop{
     background: linear-gradient(270deg, #4040A8 0%, #2161A7 100%);

@@ -34,6 +34,12 @@ active.addEventListener("mouseout", ()=>{
     active.classList.add('mActive');
     });
 
+window.addEventListener('load', ()=>{
+    setTimeout(()=>{
+        document.getElementById("pop").style.display="inline";
+    },2000);
+})
+
 
 function closeP(){
     document.getElementById("pop").style.display="none";
